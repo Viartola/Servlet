@@ -1,0 +1,1286 @@
+2016-10-13 11:19:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USUARIOS" ya existe
+Table "USUARIOS" already exists; SQL statement:
+CREATE TABLE USUARIOS (studentid INTEGER not NULL,  first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-13 11:22:19 jdbc[3]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:130)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:129)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.test(WebApp.java:893)
+	at org.h2.server.web.WebApp.process(WebApp.java:221)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2016-10-13 11:22:19 jdbc[3]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:130)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:129)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.test(WebApp.java:893)
+	at org.h2.server.web.WebApp.process(WebApp.java:221)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2016-10-13 11:22:19 jdbc[3]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:130)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:129)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.test(WebApp.java:893)
+	at org.h2.server.web.WebApp.process(WebApp.java:221)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2016-10-13 11:35:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos (studentid INTEGER not NULL,  first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-13 11:35:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO Alumnos VALUES ('hola', '2012-02-16', 'Segundo',) [21002-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:126)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:45)
+	at servlet.Servlet.doPost(Servlet.java:39)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2016-10-13 11:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos (studentid INTEGER not NULL,  first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-13 11:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO Alumnos VALUES ('awerqs', '2014-10-06', 'Segundo') [21002-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:126)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:45)
+	at servlet.Servlet.doPost(Servlet.java:39)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+2016-10-13 11:41:19 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-13 11:41:19 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:39)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-13 11:42:55 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.JavaConexion.main(JavaConexion.java:21)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Daniel/Desktop/GIT/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 20 more
+2016-10-13 11:44:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-14 09:16:23 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-14 09:16:23 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:39)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-14 09:31:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:30:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:32:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:33:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:33:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:34:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:36:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:37:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:38:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:38:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:39:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNO" no encontrada
+Table "ALUMNO" not found; SQL statement:
+DELETE FROM ALUMNO WHERE FIRST = "Pepe" [42102-192]
+2016-10-17 15:40:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Columna "Pepe" no encontrada
+Column "Pepe" not found; SQL statement:
+DELETE FROM ALUMNOS WHERE FIRST = "Pepe" [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Delete.prepare(Delete.java:131)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-17 15:40:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Columna "Pepe" no encontrada
+Column "Pepe" not found; SQL statement:
+DELETE  FROM ALUMNOS  WHERE FIRST = "Pepe" [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Delete.prepare(Delete.java:131)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-17 15:41:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Columna "PEPE" no encontrada
+Column "PEPE" not found; SQL statement:
+DELETE FROM ALUMNOS  WHERE  FIRST  = "PEPE" [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Delete.prepare(Delete.java:131)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-17 15:49:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:49:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes: 20 años', COURSE = 'Primero' WHERE FIRST = 'Jaime' "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes: 20 años', COURSE = 'Primero' WHERE FIRST = 'Jaime' "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jaime')INSERT INTO Alumnos (first,age,course) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE Alumnos SET first = 'Jaime', age = 'Tienes: 20 años', course = 'Primero' WHERE first = 'Jaime' [42001-192]
+2016-10-17 15:50:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:50:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes: 20 años', COURSE = 'Primero' WHERE FIRST = 'Jaime' "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes: 20 años', COURSE = 'Primero' WHERE FIRST = 'Jaime' "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jaime')INSERT INTO Alumnos (first,age,course) VALUES ('Jaime', 'Tienes: 20 años', 'Primero')ELSEUPDATE Alumnos SET first = 'Jaime', age = 'Tienes: 20 años', course = 'Primero' WHERE first = 'Jaime' [42001-192]
+2016-10-17 15:54:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:54:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jose', 'Tienes: 26 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 26 años', COURSE = 'Primero' WHERE FIRST = 'Jose' "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')INSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jose', 'Tienes: 26 años', 'Primero')ELSEUPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 26 años', COURSE = 'Primero' WHERE FIRST = 'Jose' "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jose')INSERT INTO Alumnos (first,age,course) VALUES ('Jose', 'Tienes: 26 años', 'Primero')ELSEUPDATE Alumnos SET first = 'Jose', age = 'Tienes: 26 años', course = 'Primero' WHERE first = 'Jose' [42001-192]
+2016-10-17 15:56:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:56:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 25 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jose', 'Tienes: 25 años', 'Primero') "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 25 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS (FIRST,AGE,COURSE) VALUES ('Jose', 'Tienes: 25 años', 'Primero') "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jose')UPDATE Alumnos SET first = 'Jose', age = 'Tienes: 25 años', course = 'Primero' WHERE first = 'Jose'ELSEINSERT INTO Alumnos (first,age,course) VALUES ('Jose', 'Tienes: 25 años', 'Primero') [42001-192]
+2016-10-17 15:58:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 15:58:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 106 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS VALUES ('Jose', 'Tienes: 106 años', 'Primero') "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 106 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS VALUES ('Jose', 'Tienes: 106 años', 'Primero') "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jose')UPDATE Alumnos SET first = 'Jose', age = 'Tienes: 106 años', course = 'Primero' WHERE first = 'Jose'ELSEINSERT INTO Alumnos VALUES ('Jose', 'Tienes: 106 años', 'Primero') [42001-192]
+2016-10-17 15:59:48 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-17 15:59:48 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+2016-10-17 16:02:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" ya existe
+Table "ALUMNOS" already exists; SQL statement:
+CREATE TABLE Alumnos  (first VARCHAR(255),  age VARCHAR(255),  course VARCHAR(255)) [42101-192]
+2016-10-17 16:02:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 26 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS VALUES ('Jose', 'Tienes: 26 años', 'Primero') "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jose')UPDATE ALUMNOS SET FIRST = 'Jose', AGE = 'Tienes: 26 años', COURSE = 'Primero' WHERE FIRST = 'Jose'ELSEINSERT INTO ALUMNOS VALUES ('Jose', 'Tienes: 26 años', 'Primero') "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jose')UPDATE Alumnos SET first = 'Jose', age = 'Tienes: 26 años', course = 'Primero' WHERE first = 'Jose'ELSEINSERT INTO Alumnos VALUES ('Jose', 'Tienes: 26 años', 'Primero') [42001-192]
+2016-10-18 11:31:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')UPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes:19 años', COURSE = 'primero' WHERE FIRST = 'Jaime'ELSEINSERT INTO ALUMNOS VALUES ('Jaime', 'Tienes:19 años', 'primero') "; se esperaba "INSERT, {"
+Syntax error in SQL statement " IF[*] EXISTS(SELECT FIRST FROM ALUMNOS WHERE FIRST = 'Jaime')UPDATE ALUMNOS SET FIRST = 'Jaime', AGE = 'Tienes:19 años', COURSE = 'primero' WHERE FIRST = 'Jaime'ELSEINSERT INTO ALUMNOS VALUES ('Jaime', 'Tienes:19 años', 'primero') "; expected "INSERT, {"; SQL statement:
+ IF EXISTS(SELECT first FROM Alumnos WHERE first = 'Jaime')UPDATE Alumnos SET first = 'Jaime', age = 'Tienes:19 años', course = 'primero' WHERE first = 'Jaime'ELSEINSERT INTO Alumnos VALUES ('Jaime', 'Tienes:19 años', 'primero') [42001-192]
+2016-10-18 11:33:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Indice "PRIMARY_KEY_" no encontrado
+Index "PRIMARY_KEY_" not found; SQL statement:
+Replace INTO Alumnos (first,age,course) VALUES ('Jaime', 'Tienes:19 años', 'primero') [42112-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getPrimaryKey(Table.java:762)
+	at org.h2.command.dml.Replace.prepare(Replace.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:126)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:50)
+	at servlet.insertarDatos.main(insertarDatos.java:21)
+2016-10-20 12:17:53 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:53 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:53 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:53 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.JavaConexion.crearTabla(JavaConexion.java:35)
+	at servlet.Servlet.doPost(Servlet.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:53 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:54 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:54 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-20 12:17:54 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at servlet.insertarDatos.insertarTabla(insertarDatos.java:35)
+	at servlet.Servlet.doPost(Servlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]"
+General error: "java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 44 more
+Caused by: java.lang.IllegalStateException: Could not open file nio:/home/jaime/git/DDI/ServletJsp/src/main/resources/DBtest.mv.db [1.4.192/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 39 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:315)
+	at org.h2.store.fs.FileNio.size(FilePathNio.java:58)
+	at org.h2.mvstore.cache.FilePathCache$FileCache.size(FilePathCache.java:116)
+	at org.h2.mvstore.FileStore.open(FileStore.java:176)
+	... 40 more
+2016-10-28 09:23:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:25:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:25:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:26:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:30:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:30:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:31:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:31:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-10-28 09:33:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
