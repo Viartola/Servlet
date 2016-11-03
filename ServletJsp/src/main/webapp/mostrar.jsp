@@ -25,6 +25,7 @@
 				<td>Nombre</td>
 				<td>Curso</td>
 				<td>Edad</td>
+				<td>Borrar</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -33,6 +34,7 @@
 					<td><c:out value="${user1.nombre}"/> </td>
 					<td><c:out value="${user1.age}"/> </td>
 					<td><c:out value="${user1.course}"/> </td>
+					<td><a name="user" href="Hola?user=${user1.nombre}">Borrar</a></td>
 		    	</tr>
 			</c:forEach>
 		</tbody>

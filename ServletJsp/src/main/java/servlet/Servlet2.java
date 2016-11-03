@@ -22,6 +22,19 @@ public class Servlet2 extends HttpServlet {
 		redirect(resp);
 		super.doPost(req, resp);
 	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String user = req.getParameter("user");
+		//System.out.println(user);
+		req.setAttribute("nom",user);
+		
+		//JavaConexion.crearTabla();
+		BorrarDatos.BorrarTabla(user);
+		
+		redirect(resp);
+		super.doPost(req, resp);
+	}
 
 	private void redirect(HttpServletResponse resp) throws IOException {
 		resp.sendRedirect("aviso.jsp");
