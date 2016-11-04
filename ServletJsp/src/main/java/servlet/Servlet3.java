@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class Servlet3
  */
 public class Servlet3 extends HttpServlet {
-	List<user> listAllUsers = new ArrayList<user>();
+	List<User> listAllUsers = new ArrayList<User>();
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		listAllUsers = ListarUsuarios.listar();

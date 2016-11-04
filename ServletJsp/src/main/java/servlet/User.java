@@ -1,6 +1,6 @@
 package servlet;
 
-public class user {
+public class User {
 	private String nombre;
 	private String age;
 	private String course;

@@ -26,7 +26,7 @@ public class ListarUsuarios {
 
     public static List listar(){
     	Connection conn = null;
-    	List<user> listUsers= new ArrayList<user>();
+    	List<User> listUsers= new ArrayList<User>();
 		ResultSet resultSet = null;
 		PreparedStatement prepareStatement = null;
 		Statement stmt = null;
@@ -48,7 +48,7 @@ public class ListarUsuarios {
     			prepareStatement = conn.prepareStatement("SELECT * FROM Alumnos");
     			resultSet = prepareStatement.executeQuery();
     			while(resultSet.next()){
-    				user userInDatabase = new user();
+    				User userInDatabase = new User();
     				userInDatabase.setNombre(resultSet.getString(1));
     				userInDatabase.setCourse(resultSet.getString(2));
     				userInDatabase.setAge(resultSet.getString(3));
