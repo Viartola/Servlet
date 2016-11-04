@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.file.Paths;
 import java.sql.*;
 
-public class insertarDatos {
+public class InsertarDatos {
 
 	static File archivo = Paths.get(".").toAbsolutePath().normalize().toFile();
 	static String ruta = archivo.toString() + "/src/main/resources/";
