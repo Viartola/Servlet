@@ -16,8 +16,8 @@ public class Servlet2 extends HttpServlet {
 		//System.out.println(user);
 		req.setAttribute("nom",user);
 		
-		JavaConexion.crearTabla();
-		BorrarDatos.BorrarTabla(user);
+		
+		Servicios.BorrarTabla(user);
 		
 		redirect(resp);
 		super.doPost(req, resp);
@@ -30,7 +30,7 @@ public class Servlet2 extends HttpServlet {
 		req.setAttribute("nom",user);
 		
 		//JavaConexion.crearTabla();
-		BorrarDatos.BorrarTabla(user);
+		Servicios.BorrarTabla(user);
 		
 		redirect(resp);
 		super.doPost(req, resp);

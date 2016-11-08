@@ -17,7 +17,7 @@ public class Servlet3 extends HttpServlet {
 	List<User> listAllUsers = new ArrayList<User>();
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		listAllUsers = ListarUsuarios.listar();
+		listAllUsers = Servicios.listar();
 		req.setAttribute("listAllUsers", listAllUsers);
 		redirect(req,resp);
 		super.doPost(req, resp);

@@ -34,8 +34,8 @@ public class Servlet extends HttpServlet {
 		//req.setAttribute("ed",fecha);
 		req.setAttribute("cur",curso);
 
-		JavaConexion.crearTabla();
-		InsertarDatos.insertarTabla(user, CalculaEdad.getEdad(fecha2), curso);
+		Servicios.crearTabla();
+		Servicios.insertarTabla(user, CalculaEdad.getEdad(fecha2), curso);
 		fecha2 = null;
 
 		req.getRequestDispatcher("fin.jsp").forward(req, resp);
